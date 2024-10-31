@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App By Ashmit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="title">Quiz-App</p>
+    <div class="dark" id="toggle">
+        <i class="moon">
+            <img src="Vector.png" alt="" class="drkImg" id="image">
+        </i>
+    </div>
+    <div class="container">
+        
+        <div class="type-topic">
+            <div class="q-type">
+                <div class="type">
+                  Question Type :
+                </div>
+                <img src="Arrow Down 6.png" alt="" class="arrow">
+                <select class="type-format" name="methods" >
+                    <option value="Fill in the blanks">Fill in the blanks</option>
+                    <option value="Multiple Choice">Multiple Choice</option>
+                    <option value="True or False">True or False</option>
+                </select>
+            </div>
+
+            <div class="popup">
+                <p class="mini-title">Brain Game Begins Here !</p>
+                <button class="start">Start</button>
+            </div>
+            <div class="fillintheblanks-display gameDisplay">
+                <p class="topic-display" id="fbDisplay">Fill in the blanks</p>
+                <p class="question-display" id="queFb"></p>
+                <p class="result-display" id="resultFb"></p>
+                <button class="next" id="next">Next</button>
+                
+            </div>
+            <div class="gameOver-display">
+                <p class="gameOver">Game Over !</p>
+                <p class="score"></p>
+                <button class="playOther">Play other types</button>
+
+            </div>
+            <div class="mcq-display gameDisplay" >
+                <p class="topic-display" id="queTopic">Multiple Choice Questions</p>
+                <div class="questionBox">
+                    <p class="question-display" id="queMcq"></p>
+                </div>
+                <div class="option-display">
+
+                    <div class="option-1 options" id="opt1" ></div>
+                    <div class="option-2 options" id="opt2"></div>
+                    <div class="option-3 options" id="opt3"></div>
+                    <div class="option-4 options" id="opt4"></div>
+
+                </div>
+                <button class="mcqNext">Next</button>
+            </div>
+           <div class="tf-display">
+            <p class="topic-display" id="tfTopic">True or False</p>
+            <div class="tf-questionBox">
+                <p class="tf-question-display" id="queTf"></p>
+            </div>
+            
+            <div class="tf-option-display">
+
+                <div class="option-a options-tf" id="optA" ></div>
+                <div class="option-b options-tf" id="optB"></div>
+                
+
+            </div>
+            <button class="tfNext">Next</button>
+           </div>
+
+            <div class="q-topic">
+                <div class="topic-type">
+                  Question Topic :
+                </div>
+                <img src="Arrow Down 6.png" alt="" class="arrow" id="arrow2">
+                <select class="topic-format" name="methods" id="topic-format-display">
+                    <option value="Programming">Programming</option>
+                    <option value="Sports">Sports</option>
+                    <option value="General Knowledge">GK</option>
+                </select>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
